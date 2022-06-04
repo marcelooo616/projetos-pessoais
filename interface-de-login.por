@@ -14,6 +14,9 @@ programa
           cadeia login
           cadeia senha
           inteiro verificador = 0
+          escreva("╔════════════════════════════╗\n")
+          escreva("╠═════Interface de login═════╣ " + "\n")
+          escreva("╚════════════════════════════╝\n")
           escreva("digite username: ")
           leia(login)
           escreva("digite a senha: ")
@@ -21,15 +24,14 @@ programa
           para (inteiro l = 0; l < 2; l = l + 1) {
                para (inteiro c = 0; c < 2; c = c + 1) {
                     se (senha == senhalogin[l][c] e login == username[l][c]) {
-                         escreva("login bem sucedido ")
-                         verificador++
+                         escreva("♥♥♥♥login bem sucedido♥♥♥♥")
+                         verificador = verificador + 1
                     }
-               } 
-               //para nao repetir variasvezes no laço
-          }se(verificador == 0){
-		    		escreva("!!!invalid!!! ")
-		    				    		
-		    	} 
+               }
+          }
+          se (verificador == 0) {
+               escreva("!!!Usuario ou senha não cadastrados!!! ")
+          }
      }
 }
 /* $$$ Portugol Studio $$$ 
@@ -37,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 863; 
+ * @POSICAO-CURSOR = 1142; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
